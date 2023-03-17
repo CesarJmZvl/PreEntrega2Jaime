@@ -68,12 +68,13 @@ header .containerCart .containerCarrito{
 
 header .containerCart .containerCarrito .cartQty{
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 10px;
+    height: 10px;
     text-align: center;
     top: 0;
     left: 100%;
     border-radius: 15%;
+    background-color: white;
 }
 
 

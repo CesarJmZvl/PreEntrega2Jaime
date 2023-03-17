@@ -8,7 +8,6 @@ const NavBar = () => {
             <div className="containerBrand">
                 <Brand />
             </div>
-            
             <nav className="containerItemList">
                 <ItemListContainer 
                     itemOne = "Amplificadores"
@@ -17,7 +16,6 @@ const NavBar = () => {
                     itemFour = "Ecualizadores"
                 />
             </nav>
-
             <div className="containerCart">
                 <CarWidget />
             </div>
