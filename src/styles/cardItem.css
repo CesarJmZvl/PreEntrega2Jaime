@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardItem{
+    border: 1px solid cadetblue;
+    height: 390px;
+    width: 260px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*--Product Image--*/
+.cardItem .cardImg{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.cardItem .cardImg img{
+    width: 100%;
+}
+
+/*--Description--*/
+.cardDescription{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.cardDescription .title{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.cardDescription .description{
+    display: none;
+}
+
+.cardDescription .qty{
+    color: white;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.cardDescription .price{
+    color: cadetblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/*--Buttons--*/
+
+.buttons{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons #Details{
+    width: 70%;
+    height: 75%;
+    border-radius: 50px;
+    border: none;
+    background-color: cadetblue;
+    color: white;
+    font-size: 14px;
+}
+
+.buttons #Details:hover{
+    background-color: rgb(45, 113, 116);
+}
+
+.buttons #AddCart{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    border: none;
+}
+
+.buttons #AddCart:hover{
+    background-color: rgb(30, 30, 30);
+}
+
+.buttons #AddCart img{
+    filter: invert();
+}

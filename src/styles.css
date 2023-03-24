@@ -79,11 +79,9 @@ header .containerCart .containerCarrito .cartQty{
     top: 0;
     left: 100%;
     border-radius: 15%;
-    background-color: white;
 }
 
 
 header .containerCart img{
-    transform: scale(0.04);
     filter: invert();
 }
