@@ -1,6 +1,6 @@
 import Brand from "./Brand";
-import CarWidget from "./CartWidget";
 import ItemListContainer from "./ItemsListContainer";
+import CarWidget from "./CartWidget";
 
 const NavBar = () => {
     return (

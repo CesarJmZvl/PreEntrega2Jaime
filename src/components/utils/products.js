@@ -5,7 +5,7 @@ const productos = [
         title: "McIntosh MA9000 2-Channel Integrated Amplifier",
         description: "300 Watts x 2 channel. 8-band tone control. Comes with DA1 Digital Audio Module installed. Optional dealer installed upgrade to DA2 Digital Audio Module available",
         stock: 1,
-        type: "Amplificador",
+        type: "Amplificadores",
         imageProduct: {
             firstImage: "https://www.mcintoshlabs.com/cdn-cgi/image/quality=90/-/media/images/mcintoshlabs/products/productimages/ma9000/ma9000-angle-left-high-background.jpg?rev=5a4ca782d8814e5d863a188c89b21f81&revision=5a4ca782-d881-4e5d-863a-188c89b21f81",
         },
@@ -17,7 +17,7 @@ const productos = [
         title: "McIntosh MA352 2-Channel Hybrid Integrated Amplifier",
         description: "Includes our Hybrid Drive™ technology that uses the best of vacuum tubes and solid state to produce the best sound performance. Vacuum tube preamplifier and solid state power amplifier. 200 Watts into 8 Ohms. 320 Watts into 4 Ohms. 5-band tone control",
         stock: 3,
-        type: "Amplificador",
+        type: "Amplificadores",
         imageProduct: {
             firstImage: "https://www.mcintoshlabs.com/cdn-cgi/image/quality=90/-/media/images/mcintoshlabs/products/productimages/ma352/ma352-angle-right-remote-background.jpg?rev=a8c151bc254b4972ad5c18fb4cd93ed8&revision=a8c151bc-254b-4972-ad5c-18fb4cd93ed8",
         },
@@ -29,7 +29,7 @@ const productos = [
         title: "McIntosh MA252 2-Channel Hybrid Integrated Amplifier",
         description: "Includes our Hybrid Drive™ technology that uses the best of vacuum tubes and solid state to produce the best sound performance. Vacuum tube preamplifier and solid state power amplifier. 100 Watts into 8 Ohms. 160 Watts into 4 Ohms",
         stock: 5,
-        type: "Amplificador",
+        type: "Amplificadores",
         imageProduct: {
             firstImage: "https://www.mcintoshlabs.com/cdn-cgi/image/quality=90/-/media/images/mcintoshlabs/products/productimages/ma252/ma252-table.jpg?rev=1b16719f3989440f9428647beeec5a31&revision=1b16719f-3989-440f-9428-647beeec5a31",
         },
@@ -89,7 +89,7 @@ const productos = [
     //Exualizadores
     {
         id: 8,
-        title: "LOKIUS",
+        title: "Schiit Audio LOKIUS",
         description: "Yes, tone control. As in, equalizer. Just like a Loki Mini+, but with 2 more bands and balanced inputs and outputs. And yeah, we know you can get a surgical software EQ, but the 6 knobs here just sit on your desk and beckon. No apps, no graphic confusion with mice or styli. Just tweak the sound to your exact preference, with a super-high-performance, discrete, single-gain-stage, LC-filtered equalizer at your fingertips.",
         stock: 5,
         type: "Ecualizadores",
@@ -101,7 +101,7 @@ const productos = [
 
     {
         id: 9,
-        title: "LOKI MAX",
+        title: "Schiit Audio LOKI MAX",
         description: "Yes, remote control. As in, you can adjust the frequency response of your system from your listening chair—and save presets. And this thing is as crazy as you can get—relay potentiometers for precision matching between channels and repeatable settings. All discrete, with no ICs in the signal path, including our own Nexus™ balanced differential topology. And pure LC—inductor-capacitor filtering from the highest to the lowest band, including 4 custom 80% nickel-core inductors as big as 1.5 Henries.",
         stock: 2,
         type: "Ecualizadores",
@@ -113,7 +113,7 @@ const productos = [
 
     {
         id: 10,
-        title: "LOKI MINI+",
+        title: "Schiit Audio LOKI MINI+",
         description:"Yes, tone control. As in, equalizer. And yeah, we know that tone controls have kinda fallen off the planet for the last few decades. But we decided to bring them back with the original Loki Mini. And now, with the Loki Mini+, we’ve boosted the performance—pushing the boundaries super-high-fidelity, low noise, single-discrete-gain-stage, LC-filtered, affordable equalizers even further.",
         stock: 7,
         type: "Ecualizadores",

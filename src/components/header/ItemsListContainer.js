@@ -1,10 +1,28 @@
+import { Link } from "react-router-dom";
+
 const ItemListContainer = (props) => {
     return(
         <ul>
-            <li>{props.itemOne}</li>
-            <li>{props.itemTwo}</li>
-            <li>{props.itemThree}</li>
-            <li>{props.itemFour}</li>
+            <li>
+                <Link to="category/Amplificadores">
+                    {props.itemOne}
+                </Link>
+            </li>
+            <li>
+                <Link to="category/Bocinas">
+                    {props.itemTwo}
+                </Link>
+            </li>
+            <li>
+                <Link to="category/Tornamesas">
+                    {props.itemThree}
+                </Link>
+            </li>
+            <li>
+                <Link to="category/Ecualizadores">
+                    {props.itemFour}
+                </Link>
+            </li>
         </ul>
     )
 }

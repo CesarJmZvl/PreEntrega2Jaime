@@ -1,16 +1,25 @@
-import CardItem from "./CardItem";
 import fetchSimulation from "../utils/fetchSimulation";
 import productos from "../utils/products";
 import { useState, useEffect } from "react";
+import CardItem from "./CardItem";
 import "../../styles/containerCardsItems.css"
+import { useParams } from "react-router-dom";
 
-const ContainerCardItems = () => {
+const ContainerCardItems = () => {  
     const [ datos, setDatos ] = useState( [] );
+    let {idCategory} = useParams()
+
     useEffect(() => {
-        fetchSimulation(productos,2000)
-        .then(resp => setDatos(resp))
-        .catch(error => console.log(error))
-    }, [])
+        if(idCategory === undefined){
+            fetchSimulation(productos,2000)
+            .then(resp => setDatos(resp))
+            .catch(error => console.log(error))    
+        } else {
+            fetchSimulation(productos.filter(filter => filter.type === idCategory))
+            .then(resp => setDatos(resp))
+            .catch(error => console.log(error))    
+        }
+    }, [idCategory])
 
     return(
         <div className="containerCardsItems">
@@ -18,6 +27,7 @@ const ContainerCardItems = () => {
                 datos.map( product => (
                     <CardItem
                         key={product.id}
+                        id={product.id}
                         imagen={product.imageProduct.firstImage}
                         title={product.title}
                         cantidad={product.stock}

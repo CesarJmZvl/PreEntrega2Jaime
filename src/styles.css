@@ -16,23 +16,22 @@ header{
 /*--Logo--*/
 
 header .containerBrand{
-    border: 1px solid black;
     width: 20%;
     min-width: 200px;
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 header .containerBrand img{
-    transform: scale(0.8);
+    transform: scale(0.1);
     filter: invert();
 }
 
 /*--ItemsListContainer--*/
 
 header .containerItemList{
-    border: 1px solid black;
     width: 70%;
     height: 100%;
     display: flex;
@@ -49,6 +48,7 @@ header .containerItemList ul{
 header .containerItemList ul li{
     margin: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /*--CarWidget--*/
