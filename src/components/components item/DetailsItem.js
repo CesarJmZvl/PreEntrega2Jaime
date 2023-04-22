@@ -13,8 +13,7 @@ const DetailsItem = () => {
     const { idItem } = useParams();
     
     useEffect(() => {
-        setDatos([])
-        fetchSimulation(productos.filter( filter => filter.id === idItem), 2000)
+        fetchSimulation(productos.filter( filter => filter.id == idItem), 2000)
         .then(resp => setDatos(resp))
         .catch(error => console.log(error))
     }, [idItem])
@@ -22,31 +21,31 @@ const DetailsItem = () => {
     return(
         <div className="detailsItem">
             {
-                datos.map( items => {
+                datos.map( items => (
                     <>
                         <div className="leftContainer">
                             <Image 
                                 imagen={items.imageProduct.firstImage} 
-                                />
+                            />
                         </div>
                         <div className="rightContainer">
-                            <Description 
-                                title={items.title}
-                                parrafo={items.paragraph}
-                                cantidad={items.cantidad}
-                                precio={items.precio} 
+                                <Description 
+                                    title= {items.title}
+                                    parrafo= {items.description}
+                                    cantidad= {items.stock}
+                                    precio= {items.price} 
                                 />
                             <div className="buttons">
-                            <AddQtyCart 
-                                cantidad={1} 
-                                />
-                            <ButtonDetails 
-                                txt="Agregar al carrito" 
-                                />
+                                    <AddQtyCart 
+                                        cantidad={1} 
+                                    />
+                                    <ButtonDetails 
+                                        txt="Agregar al carrito" 
+                                    />
                             </div>
                         </div>
                     </>
-                })
+                ))
             }
         </div>
     )

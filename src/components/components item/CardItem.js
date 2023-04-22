@@ -3,6 +3,7 @@ import "../../styles/cardItem.css"
 import Description from "./Description";
 import ButtonDetails from "./ButtonDetails";
 import ButtonAddCart from "./ButtonAddCart";
+import { Link } from "react-router-dom";
 
 const CardItem = (props) => {
     return(
@@ -14,7 +15,9 @@ const CardItem = (props) => {
                 precio= {props.precio}
                 />
             <div className="buttons">
-                <ButtonDetails />
+                <Link to={ `/item/${props.id}` }>
+                    <ButtonDetails txt="Ver Detalles" />
+                </Link>
                 <ButtonAddCart />
             </div>
         </div>

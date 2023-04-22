@@ -1,7 +1,9 @@
+import './styles.css';
 import NavBar from './components/header/NavBar';
 import ContainerCardItems from './components/components item/ContainerCardItems';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './styles.css';
+import DetailsItem from './components/components item/DetailsItem';
+
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={ <ContainerCardItems />} />
-        <Route path='/item/:id' element={ <ContainerCardItems />} />
+        <Route path='/item/:idItem' element={ <DetailsItem />} />
         <Route path='/category/:idCategory' element={ <ContainerCardItems />} />
       </Routes>
     </BrowserRouter>

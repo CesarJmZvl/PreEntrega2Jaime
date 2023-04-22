@@ -1,6 +1,6 @@
-const ButtonDetails = () => {
+const ButtonDetails = (props) => {
     return(
-        <button id="Details">Ver Detalles</button>
+        <button id="Details">{props.txt}</button>
     )
 }
 
