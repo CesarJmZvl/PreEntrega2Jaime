@@ -32,11 +32,12 @@
 
 /*--Right container--*/
 .detailsItem .rightContainer {
-    width: 35%;
+    margin: 20px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 600px;
 }
 
@@ -51,4 +52,10 @@
     justify-content: center;
     flex-direction: column;
     height: 450px
+}
+
+/*--Items title--*/
+.detailsItem .rightContainer .cardDescription .title {
+    font-size: 35px;
+    margin: 10px 0;
 }

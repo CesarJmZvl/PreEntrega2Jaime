@@ -38,7 +38,7 @@
     margin: 5px 0;
 }
 
-.cardDescription .description{
+.cardDescription .description .descriptionTitle{
     display: none;
 }
 
